@@ -1,0 +1,74 @@
+# Provides syntax highlighting for C# in nano
+
+syntax "C#" "\.cs$"
+comment "//"
+
+#	Statement Keywords
+# Selection
+color brightblue "\<(if|else|switch|case)\>"
+# Iteration
+color brightblue "\<(do|for|foreach|in|while)\>"
+# Jumps
+color brightblue "\<(break|continue|default|goto|return|yield)\>"
+# Exception Handling
+color brightblue "\<(throw|try|catch|finally)\>"
+# Misc
+color brightblue "\<((un)?checked|fixed|lock)\>"
+
+#	Method Parameters
+color brightblue "\<(params|ref|out)\>"
+
+#	Namespace Keywords
+color brightblue "\<(namespace|using|using|extern|alias)\>"
+
+#	Operator Keywords
+color brightblue "\<(as|await|is|nameof|sizeof|typeof|stackalloc)\>"
+
+#	Conversion Keywords
+color brightblue "\<(explicit|implicit|operator)\>"
+
+#	Access Keywords
+color brightblue "\<(base|this)\>"
+
+#	Query Keywords
+color brightblue "\<(from|where|select|group|into|orderby|join|let|in|on|equals|by|ascending|descending)\>"
+
+#	Contextual Keywords
+color brightblue "\<(add|async|dynamic|get|global|partial|remove|set|value|when|where|yield)\>"
+
+#	Modifiers
+# Access
+color brightblue "\<(public|protected|internal|private)\>"
+# Members
+color brightblue "\<(async|const|event|new|override|readonly|static|unsafe|virtual|volatile)\>"
+# Classes
+color brightblue "\<(abstract|partial|sealed)\>"
+
+#	Labels
+color brightblue "\<.*:\>"
+
+#	Types
+# Primitives
+color brightblue "\<(bool|s?byte|char|decimal|double|float|u?int|u?long|u?short)\>"
+# Reference types
+color brightblue "\<(class|struct|delegate|object|delegate|dynamic|string)\>"
+# Misc
+color brightblue "\<(void|var|enum)\>"
+
+# literals
+color yellow "\<(true|false|null|default)\>"
+icolor yellow "\<0x[0-9a-f]+\>"
+color yellow "\<[0-9]+\>"
+color yellow "\<0b[01]+\>"
+icolor yellow "\<[0-9]+.[0-9]+(E[0-9]+)?[fdm]?\>"
+color yellow ""[^"]*""
+
+#	Preprocessor Directives
+color brightmagenta "#(if|else|elif|endif|define|undef|warning|error|line|(end)?region|pragma"
+
+# Comments
+color magenta "//.*"
+color magenta start="/\*" end="\*/"
+
+#	Trailing whitespace.
+color ,green "[[:space:]]+$"
