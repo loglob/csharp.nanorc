@@ -55,7 +55,7 @@ color brightblue "\<(class|struct|delegate|object|delegate|dynamic|string)\>"
 # Misc
 color brightblue "\<(void|var|enum)\>"
 
-# literals
+# Literals
 color yellow "\<(true|false|null|default)\>"
 icolor yellow "\<0x[0-9a-f]+\>"
 color yellow "\<[0-9]+\>"
@@ -63,8 +63,8 @@ color yellow "\<0b[01]+\>"
 icolor yellow "\<[0-9]+.[0-9]+(E[0-9]+)?[fdm]?\>"
 color yellow ""[^"]*""
 
-#	Preprocessor Directives
-color brightmagenta "#(if|else|elif|endif|define|undef|warning|error|line|(end)?region|pragma"
+# Preprocessor Directives
+color brightmagenta "#(if|else|elif|endif|define|undef|warning|error|line|(end)?region|pragma)"
 
 # Comments
 color magenta "//.*"
