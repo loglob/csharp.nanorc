@@ -19,7 +19,7 @@ color brightblue "\<((un)?checked|fixed|lock)\>"
 color brightblue "\<(params|ref|out)\>"
 
 #	Namespace Keywords
-color brightblue "\<(namespace|using|using|extern|alias)\>"
+color brightblue "\<(namespace|using|extern|alias)\>"
 
 #	Operator Keywords
 color brightblue "\<(as|await|is|nameof|sizeof|typeof|stackalloc)\>"
@@ -31,16 +31,16 @@ color brightblue "\<(explicit|implicit|operator)\>"
 color brightblue "\<(base|this)\>"
 
 #	Query Keywords
-color brightblue "\<(from|where|select|group|into|orderby|join|let|in|on|equals|by|ascending|descending)\>"
+color brightblue "\<(from|where|select|group|into|orderby|join|let|on|equals|by|ascending|descending)\>"
 
 #	Contextual Keywords
-color brightblue "\<(add|async|dynamic|get|global|partial|remove|set|value|when|where|yield)\>"
+color brightblue "\<(add|async|dynamic|get|global|remove|set|value|when)\>"
 
 #	Modifiers
 # Access
 color brightblue "\<(public|protected|internal|private)\>"
 # Members
-color brightblue "\<(async|const|event|new|override|readonly|static|unsafe|virtual|volatile)\>"
+color brightblue "\<(const|event|new|override|readonly|static|unsafe|virtual|volatile)\>"
 # Classes
 color brightblue "\<(abstract|partial|sealed)\>"
 
@@ -51,12 +51,12 @@ color brightblue "\<.*:\>"
 # Primitives
 color brightblue "\<(bool|s?byte|char|decimal|double|float|u?int|u?long|u?short)\>"
 # Reference types
-color brightblue "\<(class|struct|delegate|object|delegate|dynamic|string)\>"
+color brightblue "\<(class|struct|delegate|object|string)\>"
 # Misc
 color brightblue "\<(void|var|enum)\>"
 
 # Literals
-color yellow "\<(true|false|null|default)\>"
+color yellow "\<(true|false|null)\>"
 icolor yellow "\<0x[0-9a-f]+\>"
 color yellow "\<[0-9]+\>"
 color yellow "\<0b[01]+\>"
