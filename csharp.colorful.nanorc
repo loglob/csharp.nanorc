@@ -1,0 +1,75 @@
+# Provides syntax highlighting for C# in nano
+
+syntax "C#" "\.cs$"
+comment "//"
+
+#	Statement Keywords
+# Selection
+color red "\<(if|else|switch|case)\>"
+# Iteration
+color red "\<(do|for|foreach|in|while)\>"
+# Jumps
+color red "\<(break|continue|default|goto|return|yield)\>"
+# Exception Handling
+color red "\<(throw|try|catch|finally)\>"
+# Misc
+color brightgreen "\<((un)?checked|fixed|lock)\>"
+
+#	Method Parameters
+color brightblue "\<(params|ref|out)\>"
+
+#	Namespace Keywords
+color cyan "\<(namespace|using|extern|alias)\>"
+
+#	Operator Keywords
+color brightgreen "\<(as|await|is|nameof|sizeof|typeof|stackalloc)\>"
+
+#	Conversion Keywords
+color cyan "\<(explicit|implicit|operator)\>"
+
+#	Access Keywords
+color green "\<(base|this)\>"
+
+#	Query Keywords
+color brightgreen "\<(from|where|select|group|into|orderby|join|let|on|equals|by|ascending|descending)\>"
+
+#	Contextual Keywords
+color brightgreen "\<(add|async|dynamic|get|global|remove|set|value|when)\>"
+
+#	Modifiers
+# Access
+color cyan "\<(public|protected|internal|private)\>"
+# Members
+color cyan "\<(const|event|new|override|readonly|static|unsafe|virtual|volatile)\>"
+# Classes
+color cyan "\<(abstract|partial|sealed)\>"
+
+#	Labels
+color brightblue "\<.*:\>"
+
+#	Types
+# Primitives
+color green "\<(bool|s?byte|char|decimal|double|float|u?int|u?long|u?short)\>"
+# Reference types
+color cyan "\<(class|struct|delegate|object|string)\>"
+# Misc
+color red "\<(void|var|enum)\>"
+
+# Literals
+color brightyellow "\<(true|false|null)\>"
+icolor brightyellow "\<0x[0-9a-f]+\>"
+color brightyellow "\<[0-9]+\>"
+color brightyellow "\<0b[01]+\>"
+icolor brightyellow "\<[0-9]+(\.[0-9]+)?([eE][0-9]+)?[fFdDmM]?\>"
+color red ""[^"]*""
+color brightred "'.'"
+
+# Preprocessor Directives
+color brightblue "#(if|else|elif|endif|define|undef|warning|error|line|(end)?region|pragma)"
+
+# Comments
+color brightblue "//.*"
+color brightblue start="/\*" end="\*/"
+
+#	Trailing whitespace.
+color ,green "[[:space:]]+$"
