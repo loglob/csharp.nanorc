@@ -45,7 +45,7 @@ color cyan "\<(const|event|new|override|readonly|static|unsafe|virtual|volatile)
 color cyan "\<(abstract|partial|sealed)\>"
 
 #	Labels
-color brightblue "\<.*:\>"
+color brightblue "\<.*:"
 
 #	Types
 # Primitives
@@ -61,8 +61,8 @@ icolor brightyellow "\<0x[0-9a-f]+\>"
 color brightyellow "\<[0-9]+\>"
 color brightyellow "\<0b[01]+\>"
 icolor brightyellow "\<[0-9]*\.[0-9]+(e[0-9]+)?\>"
-color red "\<"[^"]*"\>"
-color brightred "\<'.'\>"
+color red "\"([^\"\\]|\\.)*\""
+color brightred "'.'"
 
 # Preprocessor Directives
 color brightblue "#(if|else|elif|endif|define|undef|warning|error|line|(end)?region|pragma)"

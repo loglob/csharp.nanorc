@@ -45,7 +45,7 @@ color brightblue "\<(const|event|new|override|readonly|static|unsafe|virtual|vol
 color brightblue "\<(abstract|partial|sealed)\>"
 
 #	Labels
-color brightblue "\<.*:\>"
+color brightblue "\<.*:"
 
 #	Types
 # Primitives
@@ -61,8 +61,8 @@ icolor yellow "\<0x[0-9a-f]+\>"
 color yellow "\<[0-9]+\>"
 color yellow "\<0b[01]+\>"
 icolor yellow "\<[0-9]*\.[0-9]+(e[0-9]+)?[fdm]?\>"
-color yellow "\<"[^"]*"\>"
-color brightyellow "\<'.'\>"
+color yellow "\"([^\"\\]|\\.)*\""
+color brightyellow "'.'"
 
 # Preprocessor Directives
 color brightmagenta "#(if|else|elif|endif|define|undef|warning|error|line|(end)?region|pragma)"
